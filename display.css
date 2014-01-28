@@ -12,6 +12,7 @@
 
 .u-inlineBlock {
     display: inline-block !important;
+    max-width: 100% !important;
 }
 
 .u-block {
