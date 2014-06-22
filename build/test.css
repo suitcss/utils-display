@@ -1,0 +1,129 @@
+/** @define Test */
+
+/*! suitcss-components-test v0.1.1 | MIT License | github.com/suitcss */
+
+/**
+ * The 'describe' CSS counter
+ */
+
+.Test {
+  counter-reset: test-describe;
+}
+
+.Test-describe:before {
+  content: counter(test-describe);
+  counter-increment: test-describe;
+}
+
+/**
+ * The 'it' CSS counter
+ */
+
+.Test-describe {
+  counter-reset: test-it;
+}
+
+.Test-it:before {
+  content: counter(test-describe) "." counter(test-it);
+  counter-increment: test-it;
+}
+
+/**
+ * The test title
+ */
+
+.Test-title {
+  font-size: 2em;
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 20px 0;
+  background: #eee;
+  color: #999;
+}
+
+/**
+ * The test description and expectation titles
+ */
+
+.Test-describe,
+.Test-it {
+  background: #eee;
+  border-left: 5px solid #666;
+  color: #666;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 0.75em 20px;
+}
+
+.Test-describe {
+  font-size: 1.5em;
+  margin: 60px 0 20px;
+}
+
+/**
+ * The counter styles
+ */
+
+.Test-describe:before,
+.Test-it:before {
+  color: #999;
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 30px;
+  text-transform: uppercase;
+}
+
+/**
+ * Display-type utilities
+ */
+
+.u-block {
+  display: block !important;
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+
+.u-hiddenVisually {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.u-inline {
+  display: inline !important;
+}
+
+/**
+ * 1. Fix for Firefox bug: an image styled `max-width:100%` within an
+ * inline-block will display at its default size, and not limit its width to
+ * 100% of an ancestral container.
+ */
+
+.u-inlineBlock {
+  display: inline-block !important;
+  max-width: 100%;
+  /* 1 */
+}
+
+.u-table {
+  display: table !important;
+}
+
+.u-tableCell {
+  display: table-cell !important;
+}
+
+.u-tableRow {
+  display: table-row !important;
+}
