@@ -1,6 +1,4 @@
-/** @define Test */
-
-/*! suitcss-components-test v0.1.1 | MIT License | github.com/suitcss */
+/** @define Test; use strict */
 
 /**
  * The 'describe' CSS counter
@@ -73,7 +71,6 @@
   min-width: 30px;
   text-transform: uppercase;
 }
-
 /**
  * Display-type utilities
  */
@@ -84,6 +81,20 @@
 
 .u-hidden {
   display: none !important;
+}
+
+.u-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.u-inlineFlex {
+  display: -webkit-inline-box !important;
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
 }
 
 /**
@@ -112,8 +123,7 @@
 
 .u-inlineBlock {
   display: inline-block !important;
-  max-width: 100%;
-  /* 1 */
+  max-width: 100%; /* 1 */
 }
 
 .u-table {
