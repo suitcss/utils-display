@@ -83,20 +83,6 @@
   display: none !important;
 }
 
-.u-flex {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
-.u-inlineFlex {
-  display: -webkit-inline-box !important;
-  display: -webkit-inline-flex !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-
 /**
  * Completely remove from the flow but leave available to screen readers.
  */

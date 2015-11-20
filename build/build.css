@@ -36,8 +36,7 @@
 
 .u-inlineBlock {
   display: inline-block !important;
-  max-width: 100%;
-  /* 1 */
+  max-width: 100%; /* 1 */
 }
 
 .u-table {
