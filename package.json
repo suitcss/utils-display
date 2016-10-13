@@ -1,17 +1,27 @@
 {
   "name": "suitcss-utils-display",
-  "description": "Display utilities for SUIT CSS",
   "version": "1.0.2",
-  "style": "index.css",
+  "description": "Display utilities for SUIT CSS",
+  "keywords": [
+    "browser",
+    "css-utilities",
+    "display",
+    "suitcss",
+    "style"
+  ],
+  "homepage": "https://github.com/suitcss/utils-display#readme",
+  "bugs": "https://github.com/suitcss/utils-display/labels/bug",
+  "license": "MIT",
+  "author": "Nicolas Gallagher",
   "files": [
     "index.css",
     "index.js",
     "lib"
   ],
-  "devDependencies": {
-    "stylelint-config-suitcss": "^3.0.0",
-    "suitcss-components-test": "*",
-    "suitcss-preprocessor": "^1.0.0"
+  "style": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/suitcss/utils-display.git"
   },
   "scripts": {
     "build": "npm run setup && npm run preprocess",
@@ -23,15 +33,9 @@
     "watch": "npm run preprocess-test -- -w -v",
     "test": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/suitcss/utils-display.git"
-  },
-  "keywords": [
-    "browser",
-    "css-utilities",
-    "display",
-    "suitcss",
-    "style"
-  ]
+  "devDependencies": {
+    "stylelint-config-suitcss": "^3.0.0",
+    "suitcss-components-test": "*",
+    "suitcss-preprocessor": "^1.0.0"
+  }
 }
